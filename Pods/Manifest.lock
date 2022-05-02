@@ -1,0 +1,31 @@
+PODS:
+  - AppSpectorSDKE2E (1.4.6):
+    - themis/themis-openssl (= 0.13.6)
+  - GRKOpenSSLFramework (1.0.2.18)
+  - themis/themis-openssl (0.13.6):
+    - GRKOpenSSLFramework (= 1.0.2.18)
+    - themis/themis-openssl/core (= 0.13.6)
+    - themis/themis-openssl/objcwrapper (= 0.13.6)
+  - themis/themis-openssl/core (0.13.6):
+    - GRKOpenSSLFramework (= 1.0.2.18)
+  - themis/themis-openssl/objcwrapper (0.13.6):
+    - GRKOpenSSLFramework (= 1.0.2.18)
+    - themis/themis-openssl/core
+
+DEPENDENCIES:
+  - AppSpectorSDKE2E
+
+SPEC REPOS:
+  trunk:
+    - AppSpectorSDKE2E
+    - GRKOpenSSLFramework
+    - themis
+
+SPEC CHECKSUMS:
+  AppSpectorSDKE2E: 2488e4ce37ec745807ceabdda776a19fe586edb2
+  GRKOpenSSLFramework: 1d65e55d569af7b23074373041a92cc8bc768a92
+  themis: 7c8de74c39ce9a51e7f869e7b2605b3630c20d36
+
+PODFILE CHECKSUM: 72648817589fb1f6feb0a7b8d6adee31fd0d93fc
+
+COCOAPODS: 1.11.3

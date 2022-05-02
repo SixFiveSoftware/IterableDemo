@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-IterableDemo/Pods-IterableDemo-frameworks.sh
+${PODS_ROOT}/AppSpectorSDKE2E/AppSpectorSDKE2E.framework
+${PODS_ROOT}/GRKOpenSSLFramework/OpenSSL-iOS/bin/openssl.framework
+${BUILT_PRODUCTS_DIR}/themis/themis.framework

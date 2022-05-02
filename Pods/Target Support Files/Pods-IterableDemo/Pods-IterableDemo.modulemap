@@ -1,0 +1,6 @@
+framework module Pods_IterableDemo {
+  umbrella header "Pods-IterableDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

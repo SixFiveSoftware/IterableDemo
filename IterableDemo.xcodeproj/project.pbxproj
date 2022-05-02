@@ -16,6 +16,12 @@
 		3B119F83281C64C5007D58BA /* IterableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B119F82281C64C5007D58BA /* IterableDemoTests.swift */; };
 		3B119F8D281C64C5007D58BA /* IterableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B119F8C281C64C5007D58BA /* IterableDemoUITests.swift */; };
 		3B119F8F281C64C5007D58BA /* IterableDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B119F8E281C64C5007D58BA /* IterableDemoUITestsLaunchTests.swift */; };
+		3B119FA2281C64EF007D58BA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B119FA1281C64EF007D58BA /* NotificationService.swift */; };
+		3B119FA6281C64EF007D58BA /* IterableDemo Notification Service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B119F9F281C64EF007D58BA /* IterableDemo Notification Service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B119FB2281C65B7007D58BA /* IterableAppExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 3B119FB1281C65B7007D58BA /* IterableAppExtensions */; };
+		3B119FB4281C65B7007D58BA /* IterableSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 3B119FB3281C65B7007D58BA /* IterableSDK */; };
+		3BBF4E302820265F000E4EDC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3BBF4E2F2820265F000E4EDC /* SnapKit */; };
+		7CFC5BA081C04C94809410C5 /* Pods_IterableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF62448C5A24AE66C7513BD3 /* Pods_IterableDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +39,32 @@
 			remoteGlobalIDString = 3B119F67281C64C4007D58BA;
 			remoteInfo = IterableDemo;
 		};
+		3B119FA4281C64EF007D58BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B119F60281C64C4007D58BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B119F9E281C64EF007D58BA;
+			remoteInfo = "IterableDemo Notification Service";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3B119FAA281C64EF007D58BA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B119FA6281C64EF007D58BA /* IterableDemo Notification Service.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A11938B3D95135ABD40091D /* Pods-IterableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableDemo.debug.xcconfig"; path = "Target Support Files/Pods-IterableDemo/Pods-IterableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3573FA354AD7046A6CD1352E /* Pods-IterableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IterableDemo.release.xcconfig"; path = "Target Support Files/Pods-IterableDemo/Pods-IterableDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3B119F68281C64C4007D58BA /* IterableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IterableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B119F6B281C64C4007D58BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B119F6D281C64C4007D58BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +78,10 @@
 		3B119F88281C64C5007D58BA /* IterableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IterableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B119F8C281C64C5007D58BA /* IterableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterableDemoUITests.swift; sourceTree = "<group>"; };
 		3B119F8E281C64C5007D58BA /* IterableDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterableDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B119F9F281C64EF007D58BA /* IterableDemo Notification Service.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "IterableDemo Notification Service.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B119FA1281C64EF007D58BA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		3B119FA3281C64EF007D58BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF62448C5A24AE66C7513BD3 /* Pods_IterableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IterableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B119FB4281C65B7007D58BA /* IterableSDK in Frameworks */,
+				3BBF4E302820265F000E4EDC /* SnapKit in Frameworks */,
+				7CFC5BA081C04C94809410C5 /* Pods_IterableDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +109,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B119F9C281C64EF007D58BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B119FB2281C65B7007D58BA /* IterableAppExtensions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +126,10 @@
 				3B119F6A281C64C4007D58BA /* IterableDemo */,
 				3B119F81281C64C5007D58BA /* IterableDemoTests */,
 				3B119F8B281C64C5007D58BA /* IterableDemoUITests */,
+				3B119FA0281C64EF007D58BA /* IterableDemo Notification Service */,
 				3B119F69281C64C4007D58BA /* Products */,
+				808FD4856D4F4578EE1F997A /* Pods */,
+				5B2AEF00A67F3EFD2A0D36F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +139,7 @@
 				3B119F68281C64C4007D58BA /* IterableDemo.app */,
 				3B119F7E281C64C5007D58BA /* IterableDemoTests.xctest */,
 				3B119F88281C64C5007D58BA /* IterableDemoUITests.xctest */,
+				3B119F9F281C64EF007D58BA /* IterableDemo Notification Service.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +175,33 @@
 			path = IterableDemoUITests;
 			sourceTree = "<group>";
 		};
+		3B119FA0281C64EF007D58BA /* IterableDemo Notification Service */ = {
+			isa = PBXGroup;
+			children = (
+				3B119FA1281C64EF007D58BA /* NotificationService.swift */,
+				3B119FA3281C64EF007D58BA /* Info.plist */,
+			);
+			path = "IterableDemo Notification Service";
+			sourceTree = "<group>";
+		};
+		5B2AEF00A67F3EFD2A0D36F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF62448C5A24AE66C7513BD3 /* Pods_IterableDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		808FD4856D4F4578EE1F997A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A11938B3D95135ABD40091D /* Pods-IterableDemo.debug.xcconfig */,
+				3573FA354AD7046A6CD1352E /* Pods-IterableDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +209,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B119F92281C64C5007D58BA /* Build configuration list for PBXNativeTarget "IterableDemo" */;
 			buildPhases = (
+				4A34BE643B762311CEDE15E9 /* [CP] Check Pods Manifest.lock */,
 				3B119F64281C64C4007D58BA /* Sources */,
 				3B119F65281C64C4007D58BA /* Frameworks */,
 				3B119F66281C64C4007D58BA /* Resources */,
+				3B119FAA281C64EF007D58BA /* Embed App Extensions */,
+				956E268633D78F744A4C7177 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B119FA5281C64EF007D58BA /* PBXTargetDependency */,
 			);
 			name = IterableDemo;
+			packageProductDependencies = (
+				3B119FB3281C65B7007D58BA /* IterableSDK */,
+				3BBF4E2F2820265F000E4EDC /* SnapKit */,
+			);
 			productName = IterableDemo;
 			productReference = 3B119F68281C64C4007D58BA /* IterableDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +266,26 @@
 			productReference = 3B119F88281C64C5007D58BA /* IterableDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3B119F9E281C64EF007D58BA /* IterableDemo Notification Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B119FA7281C64EF007D58BA /* Build configuration list for PBXNativeTarget "IterableDemo Notification Service" */;
+			buildPhases = (
+				3B119F9B281C64EF007D58BA /* Sources */,
+				3B119F9C281C64EF007D58BA /* Frameworks */,
+				3B119F9D281C64EF007D58BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IterableDemo Notification Service";
+			packageProductDependencies = (
+				3B119FB1281C65B7007D58BA /* IterableAppExtensions */,
+			);
+			productName = "IterableDemo Notification Service";
+			productReference = 3B119F9F281C64EF007D58BA /* IterableDemo Notification Service.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +307,9 @@
 						CreatedOnToolsVersion = 13.3.1;
 						TestTargetID = 3B119F67281C64C4007D58BA;
 					};
+					3B119F9E281C64EF007D58BA = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 3B119F63281C64C4007D58BA /* Build configuration list for PBXProject "IterableDemo" */;
@@ -215,6 +321,10 @@
 				Base,
 			);
 			mainGroup = 3B119F5F281C64C4007D58BA;
+			packageReferences = (
+				3B119FB0281C65B7007D58BA /* XCRemoteSwiftPackageReference "swift-sdk.git" */,
+				3BBF4E2E2820265F000E4EDC /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+			);
 			productRefGroup = 3B119F69281C64C4007D58BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +332,7 @@
 				3B119F67281C64C4007D58BA /* IterableDemo */,
 				3B119F7D281C64C5007D58BA /* IterableDemoTests */,
 				3B119F87281C64C5007D58BA /* IterableDemoUITests */,
+				3B119F9E281C64EF007D58BA /* IterableDemo Notification Service */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +362,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B119F9D281C64EF007D58BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A34BE643B762311CEDE15E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IterableDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		956E268633D78F744A4C7177 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IterableDemo/Pods-IterableDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IterableDemo/Pods-IterableDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IterableDemo/Pods-IterableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B119F64281C64C4007D58BA /* Sources */ = {
@@ -281,6 +441,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B119F9B281C64EF007D58BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B119FA2281C64EF007D58BA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = 3B119F67281C64C4007D58BA /* IterableDemo */;
 			targetProxy = 3B119F89281C64C5007D58BA /* PBXContainerItemProxy */;
+		};
+		3B119FA5281C64EF007D58BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B119F9E281C64EF007D58BA /* IterableDemo Notification Service */;
+			targetProxy = 3B119FA4281C64EF007D58BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,7 +605,9 @@
 		};
 		3B119F93281C64C5007D58BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A11938B3D95135ABD40091D /* Pods-IterableDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,7 +635,9 @@
 		};
 		3B119F94281C64C5007D58BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3573FA354AD7046A6CD1352E /* Pods-IterableDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +739,56 @@
 			};
 			name = Release;
 		};
+		3B119FA8281C64EF007D58BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TNR6JFCU34;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IterableDemo Notification Service/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "IterableDemo Notification Service";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixfivesoftware.IterableDemo.IterableDemo-Notification-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B119FA9281C64EF007D58BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TNR6JFCU34;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IterableDemo Notification Service/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "IterableDemo Notification Service";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sixfivesoftware.IterableDemo.IterableDemo-Notification-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,7 +828,53 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3B119FA7281C64EF007D58BA /* Build configuration list for PBXNativeTarget "IterableDemo Notification Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B119FA8281C64EF007D58BA /* Debug */,
+				3B119FA9281C64EF007D58BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B119FB0281C65B7007D58BA /* XCRemoteSwiftPackageReference "swift-sdk.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Iterable/swift-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		3BBF4E2E2820265F000E4EDC /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B119FB1281C65B7007D58BA /* IterableAppExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B119FB0281C65B7007D58BA /* XCRemoteSwiftPackageReference "swift-sdk.git" */;
+			productName = IterableAppExtensions;
+		};
+		3B119FB3281C65B7007D58BA /* IterableSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B119FB0281C65B7007D58BA /* XCRemoteSwiftPackageReference "swift-sdk.git" */;
+			productName = IterableSDK;
+		};
+		3BBF4E2F2820265F000E4EDC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BBF4E2E2820265F000E4EDC /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B119F60281C64C4007D58BA /* Project object */;
 }
